@@ -3,11 +3,15 @@ manga-viewer
 
 A simple manga viewer using Manga Eden API - http://www.mangaeden.com/api/
 
-== Coding Guidelines
+Coding Guidelines
+--------------------
 
 1. script.js must always be validated using JSLint. http://www.jslint.com
+2. use camelCase on variables and functions
+3. use 4 spaces on indentions
 
-=== Repo Guidelines
+Repo Guidelines
+--------------------
 
 1. Our base branch is <tt>master</tt>
 2. Development branch is called <tt>apprentice</tt>
