@@ -36,7 +36,7 @@
     R.loadTemplates = function () {
         if (R.empty($('#templates'))) {
             $.get("templates/templates.html", function (data) {
-                $('body').append('<div id="#templates">' + data + "</div>");
+                $('body').append('<div id="templates">' + data + "</div>");
             });
         }
     };
