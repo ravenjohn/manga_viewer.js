@@ -1,9 +1,84 @@
-#app-body{
+/* ------------------------------------------------------------------------ */
+/* GENERAL PROPERTIES */
 
+*{
+	font-family: 'Lato', sans-serif !important;
 }
+
+body,html{
+	background-image: url("../img/tiny_grid.png");
+}
+
+/* ------------------------------------------------------------------------ */
+/* CONTAINERS */
 
 #search-div{
     margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------ */
+/* FORMS */
+
+#search-input{
+	padding: 20px;
+	width: 100%;
+	border:none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+
+/* ------------------------------------------------------------------------ */
+/* THUMBNAIL */
+
+.thumbnail{
+	height: 450px;
+}
+
+.thumbnail .img-wrapper{
+	display: table-cell;
     text-align: center;
-    width: 100%;
+    vertical-align: middle;
+	text-align: center;
+	height: 350px;
+}
+
+.thumbnail .img-wrapper *{
+	vertical-align: middle;
+}
+
+.thumbnail .img-wrapper{
+	display: block;
+}
+
+.thumbnail .img-wrapper span{
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+
+.thumbnail .img-wrapper img{
+	min-width: 200px;
+}
+
+.thumbnail .caption{
+	text-align: center;
+}
+
+/* ------------------------------------------------------------------------ */
+/* MANGA CHAPTERS */
+
+#manga-chapters .cover{
+	padding-top: 20px;
+	text-align: center;
+}
+
+#manga-chapters .cover img{
+	width: 200px;
+}
+
+#manga-images h3{
+	border-bottom: 1px dashed #ccc;
 }
