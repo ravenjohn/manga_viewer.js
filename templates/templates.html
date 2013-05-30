@@ -1,26 +1,34 @@
 <script type="text/x-underscore-template" id="thumbnails-template">
-    <li class="thumbnail span2">
-        <% if(im != null){ %>
-            <img src="http://cdn.mangaeden.com/mangasimg/<%= im %>" />
-        <% } %>
-        <a class="flag" href = "<%= '#/' + a %>" id="<%= i %>">
-            <h5><%= t %></h5>
-        </a>
+    <li class="span3">
+        <div class="thumbnail"> 
+            <div class="img-wrapper">
+                <span></span>
+                <% if(im != null){ %>
+                    <img src="http://cdn.mangaeden.com/mangasimg/<%= im %>" title="<%= t %>" />    
+                <% } else { %>
+                    <img src="http://placehold.it/200x300" title="<%= t %>" />  
+                <% } %>
+            </div>
+            <div class="caption">
+                <a class="flag" href = "<%= '#/' + a %>" id="<%= i %>" title="<%= t %>">
+                    <h5><%= t %></h5>
+                </a>
+            </div>
+        </div>
     </li>
 </script>
 
 <script type="text/x-underscore-template" id="chapters-template">
-    <div class="span4">
+    <div class="span4 cover">
         <% if(image != null){ %>
             <img src="http://cdn.mangaeden.com/mangasimg/<%= image %>" />
+        <% } else { %>
+            <img src="http://placehold.it/200x300" title="<%= t %>" />  
         <% } %>
     </div>
     <div class="span7">
         <h3><%= title %></h3>
         <p><%= description %></p>
-    </div>
-    <div class="clearfix"></div>
-    <div class="span12">
         <h4>Chapter List</h4>
         <ul>
         <% for(i = 0; i < chapters_len; i += 1){
@@ -37,8 +45,8 @@
 </script>
 
 <script type="text/x-underscore-template" id="images-template">
-    <div class="span10">
-        <% for(var i = 0, j = images.length; i < j; i += 1){
+    <div>
+        <% for(var i = 0, j = images.length; i < j; i += 1) {
             if(images[i][1] !== null) { %>
                 <img width="100%" src="http://cdn.mangaeden.com/mangasimg/<%= images[i][1] %>" />
                 <div class="clearfix"></div>
