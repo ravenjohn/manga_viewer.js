@@ -64,7 +64,7 @@
             if (R.opts.live) {
                 R.request("http://www.mangaeden.com/api/list/0/", save);
             } else {
-                R.request("http://localhost/scraper/temp/manga.json", save);
+				$.getJSON("temp/manga.json", save);
             }
         } else {
             callback();
