@@ -121,6 +121,15 @@
         var i, j, synchronizedImageLoading = Function.prototype;
 
         function showImages(data, i) {
+            function sortImages(images) {
+                var i, j = images.length, buff = [];
+                for (i = 0; i < j; i += 1) {
+                    buff.push([images[i][1], images[i][0]]);
+                }
+                buff.sort(function (a, b) {return a[1] - b[1]; });
+                return buff;
+            }
+            data.images = sortImages(data.images);
             var post;
             post = u.template($('#images-template').html(), data);
             $('#manga-images').append(post);

@@ -39,8 +39,8 @@
 <script type="text/x-underscore-template" id="images-template">
     <div class="span10">
         <% for(var i = 0, j = images.length; i < j; i += 1){
-            if(images[i][1] !== null) { %>
-                <img width="100%" src="http://cdn.mangaeden.com/mangasimg/<%= images[i][1] %>" />
+            if(images[i][0] !== null) { %>
+                <img width="100%" src="http://cdn.mangaeden.com/mangasimg/<%= images[i][0] %>" />
                 <div class="clearfix"></div>
             <% }
         } %>
