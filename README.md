@@ -33,10 +33,3 @@ Repo Guidelines
 11. Push it to remote: <tt>git push origin branch-name</tt>
 12. Create a <tt>Pull Request</tt> for that branch merging to <tt>master</tt>.
 13. If you're sure that it will work, merge it to <tt>master</tt>.
-
-
-Todo List
---------------------
-
-1. UI
-2. Faster search
