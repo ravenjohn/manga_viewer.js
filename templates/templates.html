@@ -45,10 +45,17 @@
 </script>
 
 <script type="text/x-underscore-template" id="images-template">
+<<<<<<< HEAD
     <div>
         <% for(var i = 0, j = images.length; i < j; i += 1) {
             if(images[i][1] !== null) { %>
                 <img width="100%" src="http://cdn.mangaeden.com/mangasimg/<%= images[i][1] %>" />
+=======
+    <div class="span10">
+        <% for(var i = 0, j = images.length; i < j; i += 1){
+            if(images[i][0] !== null) { %>
+                <img width="100%" src="http://cdn.mangaeden.com/mangasimg/<%= images[i][0] %>" />
+>>>>>>> master
                 <div class="clearfix"></div>
             <% }
         } %>
