@@ -7,8 +7,9 @@ Coding Guidelines
 --------------------
 
 1. script.js must always be validated using JSLint. http://www.jslint.com
-2. use camelCase on variables and functions
-3. use 4 spaces on indentions
+2. Use camelCase on variables and functions
+3. Use 4 spaces on indentions
+4. Refrain from using server side programming languages
 
 Repo Guidelines
 --------------------
@@ -29,3 +30,8 @@ Repo Guidelines
 8. When done with branch push it to remote: <tt>git push origin branch-name</tt>
 9. Create a <tt>Pull Request</tt> for that branch merging to <tt>apprentice</tt> branch. (not <tt>master</tt>)
 
+
+Todo List
+--------------------
+
+1. 
