@@ -135,7 +135,7 @@
             $('#manga-images').append(post);
             setTimeout(function () {
                 synchronizedImageLoading(i - 1);
-            }, data.images.length * 1000);  //[number of images on chapter] seconds before loading the next chapter
+            }, data.images.length * 500);  //[number of images on chapter]*5 seconds before loading the next chapter
         }
 
         synchronizedImageLoading = function (i) {
@@ -149,7 +149,7 @@
         $('#manga-chapters, #manga-thumbnails').fadeOut();
         $('#manga-images').html('').fadeIn();
         for (i = 0, j = R.chapters.length; i < j; i += 1) {
-            if (parseInt(R.chapters[i][0], 10) === parseInt(R.opts.chapter, 10)) {
+            if (parseFloat(R.chapters[i][0], 10) === parseFloat(R.opts.chapter, 10)) {
                 synchronizedImageLoading(i);
                 break;
             }
